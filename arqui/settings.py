@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Agregando aplicaciones independientes de Django
+    # Agregando aplicaciones independientes de Django    
     'Login',
+    'example',
     'rest_framework',
     'rest_framework.authtoken',
 ]
@@ -139,7 +140,7 @@ if not DEBUG:
     SECRET_KEY = 'SECRET_KEY'
     DATABASES = {
         'default': {
-            'ENGINE' : 'django.db.backends.postgresql_psycopg2',
+            'ENGINE' : 'django.db.backends.mysql',
             'NAME' : 'DB_NAME',
             'USER': 'DB_USER',
             'PASSWORD': 'DB_PASSWORD',
